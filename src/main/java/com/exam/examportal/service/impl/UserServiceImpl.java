@@ -6,9 +6,11 @@ import com.exam.examportal.repo.RoleRepository;
 import com.exam.examportal.repo.UserRepository;
 import com.exam.examportal.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class UserServiceImpl implements UserService {
     @Autowired
     private UserRepository userRepository;
